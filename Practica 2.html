@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Autor: Dennys Ortega
+        Fecha:7/11/2022
+    --> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scriptp2.js"></script>
+    
+</head>
+<body>
+
+<h2>Convertir Grados Centigrados A Grados Fahrenheint</h2>
+<Input type="text" id="GC" name="GC"></Input>
+   <Input type="button" value="Confrimar conversion" onclick="convertirGradosCentigradosAGradosFahrenheint(parseFloat(document.getElementById('GC').value))"></Input>
+    <p>El resultado es:</p>
+    <span id="resultado"></span> 
+    <br>
+
+<h2>Calcular Porcentajes</h2>
+<Input type="text" value="" id="NE" name="NE"></Input>
+<Input type="button" value="Confrimar conversion" onclick="calcularporcentajes(parseFloat(document.getElementById('NE').value))"></Input>
+
+<p> Su excelente calculo es:</p>
+<span id="porcentaje"></span>
+<br>
+
+<br>
+
+<h2>Generar Tabla</h2>
+<Input type="text" value="" id="F" name="F">filas</Input>
+<Input type="text" value="" id="C" name="C">columnas</Input>
+<input type="button" value="crear tabla" onclick="generarTablaHTML(parseFloat(document.getElementById('F').value),parseFloat(document.getElementById('C').value))">
+
+<p> Su tabla es:</p>
+<span id="tabla"></span>
+
+</body>
+</html>
